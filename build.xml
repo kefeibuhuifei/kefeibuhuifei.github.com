@@ -298,7 +298,6 @@
             <sources dir="${basedir}">
                 <file name="src/version.js"/>
                 <file name="src/exports.js"/>
-                <file name="src/switch.js"/>
                 <file name="src/util/const.js"/>
                 <file name="src/util/global.js"/>
                 <file name="src/resource.js"/>
