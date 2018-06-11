@@ -61,13 +61,9 @@
             var splash = document.getElementById('splash');
             var progressBar = splash.querySelector('.progress-bar span');
             cc.loader.onProgress = function (completedCount, totalCount, item) {
-                if (completedCount === totalCount  && totalCount === 1){
-
-                }else{
-                    var percent = 100 * completedCount / totalCount;
-                    if (progressBar) {
-                        progressBar.style.width = percent.toFixed(2) + '%';
-                    }
+                var percent = 100 * completedCount / totalCount;
+                if (progressBar) {
+                    progressBar.style.width = percent.toFixed(2) + '%';
                 }
             };
             splash.style.display = 'block';
